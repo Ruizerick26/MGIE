@@ -1,0 +1,318 @@
+@media  screen and (max-width: 500px) {
+    #contenerdor{
+        width: 100%;
+    }
+    .cuadrado{
+        width: 100%;
+        height: 25px; 
+        background-color: #FA9078; /*#EC8AA5    #DBA5A0*/  
+        border-radius: 25px;
+        margin: 0px;
+        font-family: Brush Script MT;
+    }
+    .Titulos{
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        margin: 5px;
+    }
+    .conf{
+        width: 15px;
+        height: 15px;
+        margin: 5px;
+    }
+    .tabla{
+        border: 10px;
+        width: 100%;
+        border-radius: 20px;
+        background-color: #FA9078;
+    }
+    .centro-MI{
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .logo{
+	   width: 25px;
+	   heigth: 25px;
+    }
+    .logo-1{
+       width: 25px;
+       heigth: 25px;
+    }
+    .fondo{
+        background-image: url(fondo1.jpeg);
+        max-height: 700px;
+        min-height: 550px;
+    }
+    .modelo{
+        width: 200px;
+        heigth: 500px;
+    }
+    .modeloF{
+        width: 300px;
+        heigth: 500px;
+    }
+    .centroF{
+        display: grid;
+        grid-template-columns: repeat(7, 50px);
+        grid-template-rows:550px ;
+        justify-content: space-between;
+    }
+    .caja1F{
+        grid-column: 2/5;
+    }
+    .centro{
+        display: grid;
+        grid-template-columns: repeat(4, 86px);
+        grid-template-rows:550px ;
+        justify-content: space-between;
+    }
+    .caja1{
+        grid-column: 2/4;
+    }
+    .caja2{
+        justify-self: self-end;
+        align-self: end;
+    }
+    .estilos{
+        width: 60%;
+        border-radius: 20px;
+        background-image: url(fondo2.jpeg);
+        height: 500px;
+
+    }
+    .estilo{
+        width: 80px;
+        height: 160px;
+    }
+    .regresar{
+        width: 20px;
+        height: 20px;
+    }
+
+    .busqueda{
+        width: 90%;
+        border-radius: 10px;
+        background-image: url(fondo2.jpeg);
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        top:50px;
+        position: absolute;
+    }
+    .option {
+        background-color: #FF9FDD;
+        color: #fff;
+        margin: 5px;
+        border-radius: 5px;
+        padding: 0px;
+        }
+    .barra{
+        width: 80%;
+        grid-column: 1/4;
+        }
+    .favorites-container {
+        display: none;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        text-align: center;
+        margin-top: 20px;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .favorites-heading {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .favorites-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .favorites-list img {
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .favorite-btn {
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .pie {
+        width: 100%;
+    }
+
+    .center-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        height: 100vh; 
+        min-height: 600px; 
+    }
+    .modelo-1 {
+        width: 200px;
+        height: 500px;
+        max-width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .centro-Mi {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(3, 100px );
+        background-image: url(fondo2.jpeg);
+        justify-content: center;
+        top:50px;
+        width: 95%;
+        height: 500px;
+        overflow-y: scroll;
+        scroll-behavior: auto;
+    }
+
+    .estilos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px; /* Espacio entre las imágenes */
+        width: 75%; /* Ancho máximo de la cuadrícula */
+        max-width: 800px;
+        margin: 0 auto;
+        grid-column: 1/4;
+    }
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 24px;
+        margin:5px;
+        grid-column: 1/4;
+    }
+
+    .estilo {
+        width: 100%;
+        padding-top: 100%; /* Cuadro 1:1 */
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .estilo img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit:contain; 
+    }
+    .pie {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    scroll-container {
+      display: block;
+      width: 95%;
+      height: 500px;
+      overflow-y: scroll;
+      scroll-behavior: auto;
+    }
+    scroll-page {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .scrol{
+        top:50px;
+        position: absolute;
+        background-image: url(fondo2.jpeg);
+        border-radius: 10px;
+    }
+    .prenda{
+        width: 50px;
+    }
+    .PrendasM{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px; /* Espacio entre las imágenes */
+        width: 75%; /* Ancho máximo de la cuadrícula */
+        margin: 0 auto;
+        background-image: url(fondo2.jpeg);
+        border-radius: 10px;
+        top:400px;
+        right: 50px;
+        position: absolute;
+        padding: 10px;
+    }
+    .fe{
+        top:180px;
+        right: 50px;
+        position: absolute;
+    }
+
+    /*CSS DEL LOGINA*/
+    .cuerpo{
+        /*background-image: url(fondo2.jpeg);*/
+        background-color: #7CDECD;
+        width: 80%;
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        right: 35px;
+        top:100px;
+        border-radius: 10px;
+    }
+    .tit{
+        color: #E09356;
+        font-size: 50px;
+        display: inline;
+        text-align: center;
+        font-weight: 900;
+        font-family: Brush Script MT;
+    }
+    .datos{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+        font-family: luminari;
+    }
+    .nuevoU{
+        font-size: 10px;
+        font-family: luminari;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .menuD{
+        background-color: white;
+        width: 80px;
+        height: auto;
+        border: 1px solid ;
+        border-radius: 6px;
+        padding: 20px 20px 0 20px;
+        border-color: gray;
+        font-family: Brush Script MT;
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        position: absolute;
+        top: 35px;
+        right: 10px;
+
+    }
+    .op{
+        margin: 5px;
+        cursor: pointer;   
+    }
+    .inactive{
+        display: none;
+    }
+}
