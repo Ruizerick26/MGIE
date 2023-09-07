@@ -256,7 +256,7 @@
         position: absolute;
     }
 
-    /*CSS DEL LOGINA*/
+    /*CSS DEL LOGIN*/
     .cuerpo{
         /*background-image: url(fondo2.jpeg);*/
         background-color: #7CDECD;
@@ -311,6 +311,87 @@
     .op{
         margin: 5px;
         cursor: pointer;   
+    }
+    .camara{
+        background-image: url(fondo2.jpeg);
+        position: absolute;
+        top: 50px;
+        width: 90%;
+        height: 145vw;
+        right: 20px;
+        text-align: center;
+    }
+    #camera-preview{
+        width: 80%;
+        height: 90%;
+    }
+    #captured-photo{
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 80%;
+        text-align: center;
+    }
+    .circulo{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+    }
+    .circulo img{
+        margin-left: -50px;
+    }
+    .myaccount{
+        display: flex;
+        flex-direction: column;
+        background-image: url("fondo2.jpeg");
+        width: 40%;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        border-radius: 15px;
+        padding: 5px;
+        align-items: center;
+    }
+    .myaccount p{
+        align-self: end;
+        padding: 3px;
+        font-size: 10px;
+        margin: 0;
+        cursor: pointer;
+    }
+    .registros{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+    .cuerpo2{
+        background-color: #7CDECD;
+        width: 80%;
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        right: 35px;
+        top:100px;
+        border-radius: 10px;
+    }
+    .cuerpo2 p{
+        cursor: pointer;
+        padding: 10px;
+        margin: 0;
+        width: 10px;
+        align-self: self-end;
+    }
+    .btt{
+        width: 100px;
+        align-self: center;
+    }
+    .botonF{
+        display: flex;
+        align-self: self-end;
     }
     .inactive{
         display: none;
