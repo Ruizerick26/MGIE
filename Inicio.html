@@ -14,7 +14,7 @@
     </header>
     <div class="centro">
         <div></div>
-        <div class="caja1"><img src="assets\modelo.png" class="modelo"></div>
+        <div class="caja1"><img src="assets\modelohombre.png" class="modelo"></div>
     </div>	
     <footer class="pie">
         <table class="tabla">
@@ -26,7 +26,7 @@
                     <img src="assets\at.png" class="logo Ultimos">                 
                 </td>
                 <td>
-                     <img src="assets\ag.png" class="logo"></div>
+                    <img id="camera-icon" src="assets\ag.png" class="logo">
                 </td>
                 <td>
                     <img src="assets\bs.png" class="logo busque">
@@ -37,8 +37,6 @@
             </tr>
         </table>
     </footer>
-</body>
-
 <div class="centro-Mi inactive">
         <div class="titulo">Mis Estilos </div>
         <div class="estilos">
@@ -56,9 +54,9 @@
     <div class="estilos-usados inactive">
         <scroll-container class="scrol">
             <div class="titulo">Ultimos usados </div>
-            <scroll-page id="page1"><img src="assets\modelo.png" class="modelo-1"></scroll-page>
-            <scroll-page id="page2"><img src="assets\modelo.png" class="modelo-1"></scroll-page>
-            <scroll-page id="page2"><img src="assets\modelo.png" class="modelo-1"></scroll-page>
+            <scroll-page id="page1"><img src="assets\ultimosh1.jpg" class="modelo-1"></scroll-page>
+            <scroll-page id="page2"><img src="assets\ultimosh1.jpg" class="modelo-1"></scroll-page>
+            <scroll-page id="page2"><img src="assets\ultimosh1.jpg" class="modelo-1"></scroll-page>
         </scroll-container>
 
     </div>
@@ -83,5 +81,19 @@
         <div class="op">My account</div>
         <div class="op" onclick="cierre()">Sign out</div>
     </div>
+<!-- Elemento para mostrar la vista previa de la cámara -->
+<video id="camera-preview" autoplay></video>
+
+<!-- Botón para capturar una foto -->
+<button id="capture-btn" disabled>Capturar Foto</button>
+
+<!-- Elemento para mostrar la foto capturada -->
+<img id="captured-photo" alt="Foto Capturada">
+
+<!-- Botón para descargar la foto capturada -->
+<a id="download-btn" style="display: none;" download="captured-photo.jpg">
+    <button>Descargar Foto</button>
+</a>
+</body>
 <script src="./main.js"></script>
 </html>

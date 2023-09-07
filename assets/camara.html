@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Acceso a la Cámara</title>
+</head>
+<body>
+<h1>Acceso a la Cámara</h1>
+
+<!-- Elemento para mostrar la vista previa de la cámara -->
+<video id="camera-preview" autoplay></video>
+
+<!-- Botón para capturar una foto -->
+<button id="capture-btn" disabled>Capturar Foto</button>
+
+<!-- Elemento para mostrar la foto capturada -->
+<img id="captured-photo" alt="Foto Capturada">
+
+<!-- Botón para descargar la foto capturada -->
+<a id="download-btn" style="display: none;" download="captured-photo.jpg">
+  <button>Descargar Foto</button>
+</a>
+</body>
+</html>
+<script>
+  const cameraPreview = document.getElementById('camera-preview');
+  const captureButton = document.getElementById('capture-btn');
+  const capturedPhoto = document.getElementById('captured-photo');
+  const downloadButton = document.getElementById('download-btn');
+
+  // Función para solicitar permiso y comenzar la cámara
+  async function startCamera() {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      cameraPreview.srcObject = stream;
+      captureButton.removeAttribute('disabled');
+    } catch (error) {
+      console.error('Error al acceder a la cámara:', error);
+      alert('No se pudo acceder a la cámara. Por favor, otorga permisos de cámara e intenta nuevamente.');
+    }
+  }
+
+  // Función para tomar una foto
+  function capturePhoto() {
+    const canvas = document.createElement('canvas');
+    canvas.width = cameraPreview.videoWidth;
+    canvas.height = cameraPreview.videoHeight;
+    canvas.getContext('2d').drawImage(cameraPreview, 0, 0, canvas.width, canvas.height);
+
+    // Convertir la foto a una URL de datos (base64)
+    const photoDataUrl = canvas.toDataURL('image/jpeg');
+
+    // Mostrar la foto capturada
+    capturedPhoto.src = photoDataUrl;
+
+    // Mostrar el botón de descarga
+    downloadButton.style.display = 'block';
+    downloadButton.href = photoDataUrl;
+  }
+
+  // Iniciar la cámara cuando la página se carga
+  window.addEventListener('load', startCamera);
+
+  // Agregar un controlador de eventos al botón de captura
+  captureButton.addEventListener('click', capturePhoto);
+</script>
