@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>LOGIN</title>
 	<link rel="stylesheet" type="text/css" href="./assets/estilo.css">
-	<script type="text/javascript" src="./main.js"></script>
+	
 </head>
 <body class="fondo">
 	<div class="cuerpo">
@@ -14,9 +14,22 @@
 			<input type="text" placeholder="Usuario" id="usser">
 			<input type="password" placeholder="Contraseña" id="passw"><br>
 			<input type="button" value="Iniciar Sesión" onclick="iniciar()">
-			<div class="nuevoU init">Crear una cuenta</div>
+			<div class="nuevoU init" onclick="toggle8()">Crear una cuenta</div>
 			<div class="nuevoU tip">¿Has olvidado tu contraseña?</div>
 		</div>
 	</div>	
+
+	<div class="cuerpo2 inactive">
+		<div class="botonF"><p onclick="cerrar2()">X</p></div>
+		<div class="tit">MGIE LOOK</div>
+		<div class="registros">
+			<div>Usuario:    <input type="text" placeholder="Usuario"></div>
+			<div>Email:      <input type="text" placeholder="example@gmail.com"></div>
+			<div>Contraseña: <input type="password" placeholder="Contraseña"></div>
+			<div>Genero: 	 <select id="gen"><option>Hombre</option><option>Mujer</option></select></div>
+			<input type="button" value="Crear Usuario" onclick="nuevos()" class="btt">
+		</div>
+	</div>
 </body>
+<script type="text/javascript" src="./main.js"></script>
 </html>
